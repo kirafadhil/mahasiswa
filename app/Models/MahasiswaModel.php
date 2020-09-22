@@ -19,4 +19,14 @@ class MahasiswaModel extends Model
         ->getRowArray();
     }
   }
+  // insert data ke database 
+  public function insert_mahasiswa($data)
+  {
+    return $this->db->table($this->table)->insert($data);
+  }
+
+  public function update_mahasiswa($data, $id_mhs)
+  {
+    return $this->db->table($this->table)->update($data, ['id_mhs' => $id_mhs]);
+  }
 }
