@@ -6,8 +6,8 @@
   <form action="<?= base_url('mahasiswa/store'); ?>" method="post">
 
     <div class="form-group">
-      <label for="">Nama Mahasiswa</label>
-      <input type="text" name="nm_mhs" class="form-control" placeholder="Nama Mahasiswa">
+      <label for="nm_mhs">Nama Mahasiswa</label>
+      <input type="text" name="nm_mhs" class="form-control" placeholder="Nama Mahasiswa" id="nm_mhs" required>
     </div>
 
     <div class="form-group">
@@ -16,8 +16,8 @@
     </div>
 
     <div class="form-group">
-      <label for="">Jurusan</label>
-      <textarea name="jurusan" class="form-control" placeholder="Jurusan"></textarea>
+      <label for="jurusan">Jurusan</label>
+      <textarea name="jurusan" class="form-control" placeholder="Jurusan" id="jurusan"></textarea>
     </div>
 
     <div class="form-group">

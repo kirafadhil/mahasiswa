@@ -51,7 +51,9 @@
             <td><?= $data['jurusan']; ?></td>
             <td>
               <div class="btn-group">
-                <a href="<?= base_url('mahasiswa/ubah' . $data['id_mhs']); ?>" class="btn-sm btn-warning">Edit</a><a href="<?= base_url('mahasiswa/hapus' . $data['id_mhs']); ?>" class="btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus mahasiswa <?= $data['nm_mhs'] ?> ini ?')">Hapus</a>
+                <a href="<?= base_url('mahasiswa/ubah/' . $data['id_mhs']); ?>" class="btn-sm btn-warning">Ubah</a>
+                <a href="<?= base_url('mahasiswa/hapus/' . $data['id_mhs']); ?>" class="btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus mahasiswa 
+                <?= $data['nm_mhs'] ?> ini ?')">Hapus</a>
               </div>
             </td>
   </div>
