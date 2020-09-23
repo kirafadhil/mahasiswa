@@ -19,6 +19,12 @@ class Mahasiswa extends Controller
     return view('mahasiswa/index', $data);
   }
 
+  public function tentang()
+  {
+    $data['title'] = 'Tentang Kami';
+    return view('mahasiswa/tentang', $data);
+  }
+
   public function tambah()
   {
     $data['title'] = 'Tambah Data Mahasiswa | BINUS';

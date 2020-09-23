@@ -3,7 +3,7 @@
 <div class="container mt-5 mb-5">
   <h4>Form Ubah Data Mahasiswa</h4>
   <hr>
-  <form action="<?= base_url('mahasiswa/update/' . $mahasiswa['id_mhs']); ?>" method="post">
+  <form action="<?= base_url('mahasiswa/update/' . $mahasiswa['id_mhs']); ?>" method="post" autocomplete="off">
 
     <div class="form-group">
       <label for="">Nama Mahasiswa</label>
