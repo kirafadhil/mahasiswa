@@ -29,7 +29,7 @@
         <a class="nav-link" href="/mahasiswa/tentang">Tentang</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/mahasiswa/matkul">Matkul</a>
+        <a class="nav-link" href="/matkul">Matkul</a>
       </li>
     </ul>
   </div>

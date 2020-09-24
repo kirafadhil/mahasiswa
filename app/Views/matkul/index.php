@@ -29,13 +29,13 @@
 </div>
 
 <div class="container">
-  <a href="<?= base_url('matkul/tambah'); ?>" class="btn btn-success float-left mb-3">Tambah Mata Kuliah</a>
+  <a href="<?= base_url('matkul/tambah'); ?>" class="btn btn-success float-left mb-3">Tambah Data Mata Kuliah</a>
   <div class="table-responsive mt-5 mb-5 text-center rounded-lg">
     <table class="table table-sm table-bordered table-dark">
       <thead>
         <tr>
           <th scope="col">No</th>
-          <th scope="col">Nama</th>
+          <th scope="col">Nama Mata Kuliah</th>
           <th scope="col">Ruangan</th>
           <th scope="col">Dosen</th>
           <th scope="col">Aksi</th>
@@ -51,8 +51,8 @@
             <td><?= $data['dosen_matkul']; ?></td>
             <td>
               <div class="btn-group">
-                <a href="<?= base_url('matkul/ubah/' . $data['nm_matkul']); ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
-                <a href="<?= base_url('matkul/hapus/' . $data['nm_matkul']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus matkul 
+                <a href="<?= base_url('matkul/ubah/' . $data['id_matkul']); ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                <a href="<?= base_url('matkul/hapus/' . $data['id_matkul']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus matkul 
                 <?= $data['nm_matkul'] ?> ini ?')"><i class="fas fa-trash-alt"></i></a>
               </div>
             </td>
@@ -62,4 +62,5 @@
 <?php endforeach; ?>
 </tbody>
 </table>
+
 <?= $this->endSection(); ?>

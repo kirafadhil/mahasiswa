@@ -19,4 +19,14 @@ class MatkulModel extends Model
         ->getRowArray();
     }
   }
+  // insert data ke database 
+  public function insert_matkul($data)
+  {
+    return $this->db->table($this->table)->insert($data);
+  }
+
+  public function update_matkul($data, $id_matkul)
+  {
+    return $this->db->table($this->table)->update($data, ['id_matkul' => $id_matkul]);
+  }
 }

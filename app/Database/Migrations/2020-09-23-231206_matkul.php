@@ -29,14 +29,14 @@ class Matkul extends Migration
 				'constraint' => 100,
 			],
 		]);
-		$this->forge->addKey('id_mhs', TRUE);
-		$this->forge->createTable('mahasiswa');
+		$this->forge->addKey('id_matkul', TRUE);
+		$this->forge->createTable('matkul');
 	}
 
 	//--------------------------------------------------------------------
 
 	public function down()
 	{
-		//
+		$this->forge->dropTable('matkul');
 	}
 }
